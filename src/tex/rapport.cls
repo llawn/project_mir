@@ -44,11 +44,11 @@
 	\fancyhf{} % clear header and footer
 	\setlength{\headheight}{2cm}
 	%\fancyheadoffset{1cm}
-	
+
 	%Header
 	\fancyhead[L]{\includegraphics[scale=0.3]{\logoheader}}
 	\fancyhead[R]{\nouppercase{\leftmark}}
-	
+
 	%Footer
 	\fancyfoot[L]{\subsubject}
 	\fancyfoot[C]{\textbf{\documenttitle}}
@@ -58,11 +58,11 @@
 	\fancyhf{} % clear header and footer
 	\setlength{\headheight}{2cm}
 	%\fancyheadoffset{1cm}
-	
+
 	%Header
 	\fancyhead[L]{\includegraphics[scale=0.3]{\logoheader}}
 	\fancyhead[R]{\nouppercase{\leftmark}}
-	
+
 	%Footer
 	\fancyfoot[L]{\subsubject}
 	\fancyfoot[C]{\textbf{\documenttitle}}
@@ -70,27 +70,27 @@
 }
 
 \newcommand{\maketitlepage}{
-	
+
 	\begin{titlepage}
 
 		\ThisLRCornerWallPaper{0.6}{\logobackground}
 
 		\centering
-		\includegraphics[width=0.5\textwidth]{\logotitle}\par\vspace{1cm} 
+		\includegraphics[width=0.5\textwidth]{\logotitle}\par\vspace{1cm}
 		{\scshape\LARGE \school \par}
-		
+
 		\vspace{1cm}
-		
+
 		{\scshape\Large \subject \\ \subsubject \\ \documenttype\par}
-		
+
 		\vspace{0.8cm}
-		
+
 		\rule{\linewidth}{0.2 mm} \\[0.4 cm]
 		{\huge\bfseries \documenttitle \par} \
 		\rule{\linewidth}{0.2 mm} \\[1.5 cm]
-		
+
 		\vspace{0.8cm}
-    
+
 		\begin{minipage}{0.5\textwidth}
 			\begin{flushleft} \large
 				\emph{\textbf{\studenttitle :}} \\
@@ -104,7 +104,7 @@
 				\teacher \\
 			\end{flushright}
 		\end{minipage}\\[4cm]
-		
+
 		\vspace{\fill}
 		{\large \today\par}
 
