@@ -1,0 +1,35 @@
+% ======================== Document by Dylan Marin =============================
+
+\documentclass{rapport}
+\usepackage{lipsum}
+\usepackage{eurosym}
+\usepackage[table]{xcolor}
+\usepackage[acronym]{glossaries}
+\begin{document}
+
+\include{setup}
+
+% ========================= Beginning of the document ==========================
+
+\maketitlepage
+\pagestyle{plain}
+\include{tex/00-01_firstpage}
+
+% =================================== Body =====================================
+
+\pagenumbering{arabic}
+\pagestyle{fancy}
+
+\include{tex/00-02_resume}
+\include{tex/00-03_introduction}
+\include{tex/01_section1}
+\include{tex/02_section2}
+\include{tex/03_section3}
+\include{tex/99_conclusion}
+
+% ============================== End of document  ==============================
+
+\bibliography{bibliography}{}
+\bibliographystyle{plain}
+
+\end{document}
