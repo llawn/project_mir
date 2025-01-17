@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["animation"]
+
+[tool.setuptools.package-dir]
+animation = "src/animation"
+
+[project]
+name        = "mir_project"
+description = """Measure the response of the material to a stimulus and
+minimize the error between measurement and prediction."""
+authors     = [{name = "Llawn", email = "llawn06@gmail.com"}]
+maintainers = [{name = "Llawn", email = "llawn06@gmail.com"}]
+
+readme = "README.md"
+license = {file = "LICENSE"}
+
+version         = "0.0.1"
+requires-python = ">=3.13"
+
+keywords = [
+    "optimal design"
+]
+dependencies = [
+    "numpy>=2.2.1",
+    "pandas>=2.2.3",
+]
