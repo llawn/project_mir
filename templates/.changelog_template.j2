@@ -1,0 +1,30 @@
+# Changelog
+
+{% for entry in tree %}
+
+## {{ entry.version }}{% if entry.date %} ({{ entry.date }}){% endif %}
+
+{% for change_key, changes in entry.changes.items() %}
+
+{% if change_key %}
+### {{ change_key }}
+{% endif %}
+
+<table>
+  <tr>
+    <th>Prefix</th>
+    <th>Scope</th>
+    <th>Subject</th>
+  </tr>
+  {% for change in changes %}
+    {% if change.scope %}
+      <tr>
+        <td>{{ change.prefix }}</td>
+        <td><strong>{{ change.scope }}</strong></td>
+        <td>{{ change.subject }}</td>
+      </tr>
+    {% endif %}
+  {% endfor %}
+</table>
+{% endfor %}
+{% endfor %}
