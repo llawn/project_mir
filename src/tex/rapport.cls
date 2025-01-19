@@ -32,6 +32,7 @@
 \newcommand{\student}[1]{\renewcommand{\student}{#1}}
 \newcommand{\school}[1]{\renewcommand{\school}{#1}}
 \newcommand{\documenttype}[1]{\renewcommand{\documenttype}{#1}}
+\newcommand{\footertitle}[1]{\renewcommand{\footertitle}{#1}}
 
 \newcommand{\logoheader}[1]{\renewcommand{\logoheader}{#1}}
 \newcommand{\logobackground}[1]{\renewcommand{\logobackground}{#1}}
@@ -51,7 +52,7 @@
 
 	%Footer
 	\fancyfoot[L]{\subsubject}
-	\fancyfoot[C]{\textbf{\documenttitle}}
+	\fancyfoot[C]{\textbf{\footertitle}}
 }
 
 \fancypagestyle{fancy}{%
@@ -65,7 +66,7 @@
 
 	%Footer
 	\fancyfoot[L]{\subsubject}
-	\fancyfoot[C]{\textbf{\documenttitle}}
+	\fancyfoot[C]{\textbf{\footertitle}}
 	\fancyfoot[R]{\thepage}
 }
 
